@@ -1,35 +1,148 @@
 body {
   margin: 0;
   text-align: center;
+  color: #40514E;
 }
 
 .top-container {
-  padding-top: 200px;
-  background-color: #E4F9F5;
+  padding-top: 100px;
+  background-color: #EAF6F6;
+  position: relative;
+  font-family: 'Merriweather', serif;
+
 }
 
 h1 {
-  margin-top: 0;
+  /* px is not dynamic */
+  /* font-size: '90px'; */
+  /* 'pourcentage' and 'em' are equally better */
+  /* by default, '100%' = '16px' = '1em' */
+  /* so our '90px' would be '562.5%'  or '5.625em'*/
+  /* font-size: 562.5%; */
+  /* font-size: 5.625em; */
+  /* But 'em' and '%' depend on the previous size.*/
+  /* So to have a dynamic size that is independant from it's parent element, use 'rem'*/
+  /* 'rem' make life easier by providing a dynamic and independant size */
+  font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+  margin: 50px auto 0 auto;
   /* width: 300px;
   margin: 0 auto; */
+  color: #66BFBF;
+  line-height: 1;
 }
 
-.middle-container {
+.profile {
+  margin-top: 50px;
 
-  height: 200px;
+  /* font-size: 1.5rem; */
+  line-height: 1;
 }
 
-.bottom-container {
-  height: 200px;
+.intro p {
+  margin: 50px auto 0;
+  line-height: 2;
+  width: 30%;
 }
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+a {
+  color: #11999E;
+  text-decoration: none;
+  margin: 40px 20px;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+hr {
+  border-color: #EAF6F6;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: thick;
+  width: 5%;
+  margin: 100px auto;
+}
+
+
+
 
 .top-cloud {
   position: absolute;
-  top: 100px;
-  right: 300px;
+  top: 50px;
+  right: 300px
 }
 
 .bottom-cloud {
   position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.profile-img {
+  width: 15%;
+  border-radius: 100%;
+}
+
+.skill-row {
+  width: 40%;
+  margin: 50px auto 50px;
+  text-align: left;
+  line-height: 2;
+}
+/* floating the images */
+/* I can use this but it'll be images on the left and text on the rigth for each skill */
+/* And that's ok but, let's do it different by floating each to it's own direction */
+/* .skill-row img {
+  margin-right: 30px;
+  width: 25%;
+  float: left;
+} */
+
+.computer-img {
+  margin-right: 30px;
+  width: 25%;
+  float: left;
+}
+
+.second-computer-img {
+  margin-right: 30px;
+  width: 25%;
+  float: right;
+}
+
+.contact-me {
+  width: 30%;
+  margin: 0 auto 50px;
+  line-height: 2;
+}
+
+.btn {
+  /* background-color: #66BFBF; */
+  margin: 60px auto;
+}
+
+.bottom-container {
+  padding: 20px 0 20px;
+  background-color: #66BFBF;
+  line-height: 1;
+}
+
+.copy-right {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 30px 0 ;
 
 }
