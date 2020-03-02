@@ -9,8 +9,18 @@ body {
   background-color: #EAF6F6;
   position: relative;
   font-family: 'Merriweather', serif;
-
 }
+
+
+.table {
+  margin: auto;
+
+  width: 100%;
+  text-align: left;
+}
+ .table-header {
+   text-align: center;
+ }
 
 h1 {
   /* px is not dynamic */
@@ -97,9 +107,9 @@ hr {
 }
 
 .skill-row {
-  width: 40%;
+  width: 30%;
   margin: 50px auto 50px;
-  text-align: left;
+  text-align: center;
   line-height: 2;
 }
 /* floating the images */
@@ -132,6 +142,9 @@ hr {
 .btn {
   /* background-color: #66BFBF; */
   margin: 60px auto;
+}
+.btn:hover {
+  color: #a1e6e3;
 }
 
 .bottom-container {
